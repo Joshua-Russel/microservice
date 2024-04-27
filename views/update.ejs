@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>UPDATE FORM</title>
+	</head>
+	<body>
+		<h1>ENTER CMT TO UPDATE</h1>
+		<form
+			action="/comments/<%=comment.id%>?_method=PATCH"
+			method="post"
+		>
+			<textarea
+				name="update"
+				id="up"
+				cols="30"
+				rows="10"
+			>
+<%=comment.comment%></textarea
+			>
+			<br />
+			<button>Submit</button>
+		</form>
+	</body>
+</html>
