@@ -1,0 +1,6 @@
+version: "3"
+services:
+  cmt:
+    build: "./cmt"
+    ports:
+      - 3000:3000
